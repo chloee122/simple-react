@@ -41,10 +41,9 @@ export default function Accordion() {
           data.map((item) => {
             const isExpanded = item.id === selected;
             return (
-              <div className="bg-indigo-300 mb-2 px-2 py-3">
+              <div key={item.id} className="bg-indigo-300 mb-2 px-2 py-3">
                 <div
                   className="font-bold flex justify-between cursor-pointer"
-                  key={item.id}
                   onClick={() =>
                     enableMultiSelection
                       ? handleMultiSelect(item.id)
