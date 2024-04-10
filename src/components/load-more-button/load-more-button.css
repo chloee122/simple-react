@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.product-card {
+  width: 24%;
+  height: 250px;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.img-container {
+  width: 150px;
+  height: 150px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.active-btn {
+  border: 1px solid black;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.disabled-btn {
+  border: 1px solid rgb(137, 137, 137);
+  margin-top: 10px;
+  padding: 10px;
+  color: rgb(137, 137, 137);
+}
